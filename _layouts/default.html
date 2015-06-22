@@ -14,7 +14,6 @@
     </style>
     <link href="/assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="/assets/css/docs.css" rel="stylesheet">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/solarized_light.min.css">
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
@@ -51,14 +50,17 @@
 
             <li class="nav-header">COUREX XML API</li>
             <li data-section="courex_xml/connect">
-              <a href="/courex_xml/connect.html">Connect</a>
+              <a href="/courex_xml/connect.html">Connect & Basics</a>
             </li>
             <li data-section="courex_xml/tracking">
               <a href="/courex_xml/tracking.html">Tracking</a>
             </li>
-
-            <li class="nav-header">SUPPORT</li>
-            <li><a href="mailto:support@courex.com.sg">Contact Support</a></li>
+            <li data-section="courex_xml/order">
+              <a href="/courex_xml/order.html">Order</a>
+            </li>
+            <li data-section="courex_xml/error_codes">
+              <a href="/courex_xml/error_codes.html">Error Codes</a>
+            </li>
 
           </ul>
         </div>
@@ -81,7 +83,7 @@
       $('#menu [data-section="{{page.section}}"]').addClass('active');
     </script>
 
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/obsidian.min.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-  </body>
+    <script>hljs.initHighlightingOnLoad();</script>  </body>
 </html>

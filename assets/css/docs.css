@@ -27,6 +27,35 @@ body {
   font-family: Helvetica, sans-serif;
 }
 
+pre {
+  padding: 0;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  border: 0;
+}
+
+th {
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 1px solid #aaa;
+}
+tr {
+  border: 1px solid #aaa;
+}
+td {
+  border: 1px solid #aaa;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+code {
+  padding-left: 7px !important;
+  padding-right: 7px !important;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  font-size: 14px;
+}
+
 .navbar-inner {
   padding: 5px 0px;
   background-image: none;
@@ -68,7 +97,7 @@ body {
 
 #menu {
   min-height: 800px;
-  border-right: 1px solid #eee;
+  border-right: 1px solid #ddd;
   width: 180px;
 }
 @media (min-width: 1200px) {
