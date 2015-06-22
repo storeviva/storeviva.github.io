@@ -6,7 +6,7 @@ section: courex_xml/tracking
 
 ## Tracking
 
-Returns the status of the specified tracking number. The returns the list of all events pertaining to the specified tracking number.
+Returns the list of all events pertaining to the specified tracking number and its current status. Newer events are returned first.
 
 #### Parameters
 - **AppType**: ```Tracking```
