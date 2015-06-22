@@ -14,6 +14,7 @@
     </style>
     <link href="/assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/solarized_light.min.css">
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
@@ -25,15 +26,13 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
-    <style>
-    </style>
   </head>
   <body>
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
           <a href="/" class="brand">
-            <img src="/assets/img/Storeviva.png"></img>
+            <!-- <img src="/assets/img/Storeviva.png"></img> -->
             <span class="brand_title">StoreViva</span>
           </a>
           <ul class="nav pull-right">
@@ -46,12 +45,21 @@
       <div class="row">
         <div class="span3">
           <ul id="menu" class="nav nav-list" data-spy="affix">
+
             <li class="nav-header">STOREVIVA DOCS</li>
             <li data-section=""><a href="/">Home</a></li>
+
             <li class="nav-header">COUREX XML API</li>
-            <li data-section="courex/tracking"><a href="/courex/tracking.html">Tracking</a></li>
+            <li data-section="courex_xml/connect">
+              <a href="/courex_xml/connect.html">Connect</a>
+            </li>
+            <li data-section="courex_xml/tracking">
+              <a href="/courex_xml/tracking.html">Tracking</a>
+            </li>
+
             <li class="nav-header">SUPPORT</li>
             <li><a href="mailto:support@courex.com.sg">Contact Support</a></li>
+
           </ul>
         </div>
         <div class="span9">
@@ -72,5 +80,8 @@
     <script>
       $('#menu [data-section="{{page.section}}"]').addClass('active');
     </script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>
