@@ -51,7 +51,7 @@ Place new delivery orders.
 - **AppType**: ```Order```
 - **OrderType**: The order type of the shipment. ```Local``` or ```Export```.
 - **TrackNo**: The tracking number assigned to the new order. Ex: ```ML213742```.
-- **Status**: ```Succsesful```.
+- **Status**: ```Successful```.
 - **TotalCost**: Cost of the delivery in SGD.
 
 ## Example
