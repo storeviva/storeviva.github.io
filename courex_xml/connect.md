@@ -23,6 +23,7 @@ Accept: */*
 User-Agent: CourexGateway_socket/1.0
 Content-Type: application/x-www-form-urlencoded
 Content-Length: X (length of data plus 19 for “HTTP_RAW_POST_DATA=”)
+
 HTTP_RAW_POST_DATA=<RequestCall><!-- Service specific data --></RequestCall>
 ```
 
