@@ -33,7 +33,7 @@ Request:
 ```xml
 <RequestCall>
   <AppType>Tracking</AppType>
-  <UserName>dolita</UserName>
+  <UserName>[Username]</UserName>
   <Password>[pass]</Password>
   <Parameters>
 	<TrackNo>ML213742</TrackNo>

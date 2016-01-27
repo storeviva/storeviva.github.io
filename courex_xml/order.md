@@ -31,6 +31,7 @@ Place new delivery orders.
 - **RecipientState**: The state of the Receiver.
 - **RecipientPostalCode**: The postal code of the Receiver.
 - **RecipientCountry**: The country of the Receiver.
+- **NotificationEmail**: The email address of the Receiver for notification on shipment progress (local delivery only).
 - **ContentDesc**: The content description of the shipment.
 - **DeclaredValue**: The declared value of the shipment.
 - **Weight**: The weight of the shipment.
@@ -46,6 +47,8 @@ Place new delivery orders.
 - **Instruction**: The additional instructions of the shipment. OPTIONAL: You may input any additional instructions pertaining to the order
 - **PaymentMethod**: The payment method of the shipment. Available Options: 1 = Credit, 2 = Cash, 3 = Prepaid, 4 = Cheque
 - **PaymentParty**: The payment party of the shipment. Available Options: 1 = Sender, 2 = Receiver
+- **CustomTracking**: (Optional) Your own custom tracking number
+- **CashCollection**: (Optional) Amount of Cash to be collected on delivery (COD). Enter the number only (without $ sign)
 
 #### Response
 - **AppType**: ```Order```
@@ -61,7 +64,7 @@ Request:
 ```xml
 <RequestCall>
   <AppType>Order</AppType>
-  <UserName>dolita</UserName>
+  <UserName>[Username]</UserName>
   <Password>[pass]</Password>
   <Parameters>
 	  <OrderType>Local</OrderType>
@@ -83,6 +86,7 @@ Request:
 	  <RecipientState>NA</RecipientState>
 	  <RecipientPostalCode>486127</RecipientPostalCode>
 	  <RecipientCountry>Singapore</RecipientCountry>
+	  <NotificationEmail>recipient@test.com</NotificationEmail>
 	  <ContentDesc>test content</ContentDesc>
 	  <DeclaredValue>5</DeclaredValue>
 	  <Weight>1</Weight>
@@ -98,6 +102,8 @@ Request:
 	  <Instruction>Test Instruction</Instruction>
 	  <PaymentMethod>1</PaymentMethod>
 	  <PaymentParty>1</PaymentParty>
+	  <CustomTracking>T-20160127-1</CustomTracking>
+	  <CashCollection>199.90</CashCollection>
   </Parameters>
 </RequestCall>
 ```
