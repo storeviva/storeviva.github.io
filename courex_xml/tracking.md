@@ -22,9 +22,11 @@ Returns the list of all events pertaining to the specified tracking number and i
   - ```Delivered```
   - ```Picked Up```, ```Collected```
   - ```In Warehouse```
-  - ```In Transit```, ```In Transit to Destination```
+  - ```In Transit```, ```On the way to deliver```, ```On the way to pickup```
   - ```Transferred to International Shipping```
   - ```Undelivered - No One Home```, ```Undelivered - Wrong Address```, ```Undelivered - Moved```, ```Undelivered - Not Willing To Accept```, ```Undelivered - Other```
+  - ```Returned connote and COD```
+  - ```Returned to Sender```
 
 #### Example
 
