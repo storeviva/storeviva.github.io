@@ -27,7 +27,7 @@ Content-Length: X (length of data plus 19 for “HTTP_RAW_POST_DATA=”)
 HTTP_RAW_POST_DATA=<RequestCall><!-- Service specific data --></RequestCall>
 ```
 
-XML document is the XML corresponding to the format needed by the requested service.
+XML document is the XML corresponding to the format needed by the requested service. One blank line should be sent after the *Content-length* line.
 
 Once the above data has been sent, read from the socket until further data is available. The data returned will consist of the requested information as documented in the service's documentation.
 
