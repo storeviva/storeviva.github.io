@@ -36,7 +36,7 @@ Place new delivery orders.
 - **DeclaredValue**: The declared value of the shipment.
 - **Weight**: The weight of the shipment.
 - **ShipMethod**: The shipping method of the shipment.
-- **ShipType**: The shipping type of the shipment.
+- **ShipType**: The shipping type of the shipment. Each shipping type corresponds to different dimensions. Please ask Courex for the applicable shipping types.
 - **PickupDate**: The pickup date of the shipment. OPTIONAL: Only required if Sender & Recipient’s Country is Singapore
 - **PickupTime**: The pickup time of the shipment. OPTIONAL: Only required if Sender & Recipient’s Country is Singapore
 - **DeliverDate**: The delivery date of the shipment. OPTIONAL: Only required if Sender & Recipient’s Country is Singapore
