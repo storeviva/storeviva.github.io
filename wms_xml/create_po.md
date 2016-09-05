@@ -1,7 +1,7 @@
 ---
 layout: default
 title: WMS XML - Purchase Order
-section: wms_xml/ceate_po
+section: wms_xml/create_po
 ---
 
 ## Purchase Order
