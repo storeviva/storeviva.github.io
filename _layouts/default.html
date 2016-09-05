@@ -106,6 +106,25 @@
 
     <script>
       $('#menu [data-section="{{page.section}}"]').addClass('active');
+
+      $('#menu').on('affix.bs.affix', function (e) {
+          var $this = $(this),
+              affix = $this.data('bs.affix'),
+              offset = affix.options.offset,
+              offsetBottom = offset.bottom;
+
+          if (typeof offset != 'object') {
+              offsetBottom = offset;
+          }
+
+          if (typeof offsetBottom == 'function') {
+              offsetBottom = offset.bottom($this);
+          }
+
+          if ($this.outerHeight() + $this.offset().top + offsetBottom === Math.max($(document).height(), $(document.body).height())) {
+              e.preventDefault();
+          }
+      });
     </script>
 
     <link rel="stylesheet" href="/assets/css/highlight.min.css">
