@@ -107,9 +107,12 @@
     <script>
       $('#menu [data-section="{{page.section}}"]').addClass('active');
 
-      if ($('.span3').outerHeight(true) < $('.span9').outerHeight(true)) {
-          $('#menu').affix({});
-      }
+      $('#menu').affix({
+        offset: {
+          top: $('#menu').offset().top,
+          bottom: 40
+        }
+      });
     </script>
 
     <link rel="stylesheet" href="/assets/css/highlight.min.css">
