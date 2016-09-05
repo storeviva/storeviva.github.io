@@ -38,7 +38,8 @@ Create new Purchase Order.
 
 #### Item Parameters
 
-These parameters has to be enclosed in ```Item```, 1 ```Item``` per SKU.
+These parameters has to be enclosed in ```Item```, 1 item element per SKU.
+
 - **ItemSKU**: SKU of item as in StoreViva inventory. The SKU has to be created before order creation.
 - **ItemQty**: Qty of this item in the order.
 - **ItemPrice**: Price of this item in the order.
