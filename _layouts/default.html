@@ -107,7 +107,13 @@
     <script>
       $('#menu [data-section="{{page.section}}"]').addClass('active');
 
-      $('#menu').on('affix.bs.affix', function (e) {
+      $('.span3').affix({
+          offset: {
+              top:100,
+              bottom:0
+          }
+      });
+      $('.span3').on('affix.bs.affix', function (e) {
           var $this = $(this),
               affix = $this.data('bs.affix'),
               offset = affix.options.offset,
