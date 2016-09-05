@@ -109,9 +109,12 @@
 
       $('#menu').affix({
         offset: {
-          top: $('#menu').offset().top,
+          top: 100,
           bottom: 40
         }
+      });
+      $('#menu').on('affixed.bs.affix', function(){
+        $(this).removeAttr('style');
       });
     </script>
 
