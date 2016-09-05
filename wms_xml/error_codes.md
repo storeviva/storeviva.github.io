@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Courex XML - Error Codes
-section: courex_xml/error_codes
+title: WMS XML - Error Codes
+section: wms_xml/error_codes
 ---
 
 ## Error Codes
