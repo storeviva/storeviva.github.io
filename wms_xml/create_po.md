@@ -35,18 +35,23 @@ Create new Purchase Order.
 - **POReference**: (Optional) Your reference for the order.
 - **ShipDate**: (Optional) Shipping Date for the order. Format ```DDMMYYYY```, eg, ```25092015```.
 - **PORemarks**: (Optional) Any remarks for the order.
+- **CreateItem**: (Optional) Flag to indicate that if there is new item in ```Item``` tag, it can be created on the fly. Accepted value: ```1```.
+- **PONumber**: (Optional) Custom Order number. It will override the default order number. Do this if you would like to use your own format.
 
 #### Item Parameters
 
 These parameters has to be enclosed in ```Item```, 1 item element per SKU.
 
-- **ItemSKU**: SKU of item as in StoreViva inventory. *The SKU has to be created before order creation.*
+- **ItemSKU**: SKU of item as in StoreViva inventory. *If ```CreateItem``` is set to 1, the SKU will be created if it doesn't exist. Otherwise, do ensure the SKU exists before order creation.*
 - **ItemQty**: Qty of this item in the order.
 - **ItemPrice**: Price of this item in the order.
+- **ItemCategory**: (Compulsory if ```CreateItem``` is set to 1) Category of this item.
+- **UnitsofMeasurement**: (Compulsory if ```CreateItem``` is set to 1) The Units of Measurement, eg PIECE, BOX, BOTTLE.
+
 
 #### Response
 - **AppType**: ```POCreate```
-- **PONumber**: Order Number issued on successful order creation.
+- **PONumber**: Order Number issued on successful order creation. If you set your own PONumber, this will be the value returned.
 - **Status**: ```Successful```.
 
 ## Example
