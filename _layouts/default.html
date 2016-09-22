@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>StoreViva Docs{% if page.title }%} - {{page.title}}{% endif %}</title>
+    <title>StoreViva Docs{% if page.title %} - {{page.title}}{% endif %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -11,6 +11,10 @@
     <style>
      body { padding-top: 60px; /* 60px to make the container go all the way
       to the bottom of the topbar */ }
+    .affix {
+        position:static;
+    }
+
     </style>
     <link href="/assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="/assets/css/docs.css" rel="stylesheet">
@@ -107,15 +111,6 @@
     <script>
       $('#menu [data-section="{{page.section}}"]').addClass('active');
 
-      $('#menu').affix({
-        offset: {
-          top: 100,
-          bottom: 40
-        }
-      });
-      $('#menu').on('affixed.bs.affix', function(){
-        $(this).removeAttr('style');
-      });
     </script>
 
     <link rel="stylesheet" href="/assets/css/highlight.min.css">
