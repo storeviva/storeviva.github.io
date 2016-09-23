@@ -45,9 +45,12 @@ These parameters has to be enclosed in ```Item```, 1 item element per SKU.
 - **ItemSKU**: SKU of item as in StoreViva inventory. *If ```CreateItem``` is set to 1, the SKU will be created if it doesn't exist. Otherwise, do ensure the SKU exists before order creation.*
 - **ItemQty**: Qty of this item in the order.
 - **ItemPrice**: Price of this item in the order.
-- **ItemCategory**: (Compulsory if ```CreateItem``` is set to 1) Category of this item.
-- **UnitsofMeasurement**: (Compulsory if ```CreateItem``` is set to 1) The Units of Measurement, eg PIECE, BOX, BOTTLE.
+- **ItemName**: (Conditional) Name of this item.
+- **ItemBarcode**: (Conditional) Barcode of this item.
+- **ItemCategory**: (Conditional) Category of this item, eg PRODUCTS, BOOKS, ELECTRONICS.
+- **UnitsofMeasurement**: (Conditional) The Units of Measurement, eg PIECE, BOX, BOTTLE.
 
+*Conditional* parameters: Compulsory if ```CreateItem``` is set to 1
 
 #### Response
 - **AppType**: ```SOCreate```
