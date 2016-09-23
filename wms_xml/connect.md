@@ -13,7 +13,7 @@ A new user of the Courex XML application will need to complete the following ste
 
 ## Service URL
 
-All XML services is accessed througth the URL: ```http://www.courex.com.sg/xml-wms/```
+All XML services is accessed througth the URL: ```https://www.courex.com.sg/xml-wms/```
 
 ## HTTP Request format
 
