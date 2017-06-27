@@ -34,6 +34,7 @@ Create new Sales Order.
 - **PaymentMethod**: Payment Method of the order.
 - **SOReference**: (Optional) Your reference for the order.
 - **ShipDate**: (Optional) Shipping Date for the order. Format ```DDMMYYYY```, eg, ```25092015```.
+- **ShipTime**: (Optional) Shipping Time for the order.
 - **SORemarks**: (Optional) Any remarks for the order. If Courex delivery order is created after fulfilling the Sales Order, this remarks will appear in delivery instruction.
 - **CreateItem**: (Optional) Flag to indicate that if there is new item in ```Item``` tag, it can be created on the fly. Accepted value: ```1```.
 - **SONumber**: (Optional) Custom Order number. It will override the default order number. Do this if you would like to use your own format.
